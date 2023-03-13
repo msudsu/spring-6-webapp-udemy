@@ -19,6 +19,7 @@ public class Publisher {
     private String city;
     private String state;
     private String zip;
+
     @OneToMany(mappedBy = "publisher")
     private Set<Book> books;
 
